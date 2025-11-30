@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Certificate Generator</title>
+    <link rel="stylesheet" href="cert-generator.css">
+</head>
+<body>
+    <div class="cert-generator-container">
+        <!-- Header -->
+        <div class="cert-header">
+            <h1>📜 Barangay Certificate Generator</h1>
+            <p>Municipality of Sto. Domingo, Province of Albay</p>
+        </div>
+        
+        <!-- Current Date/Time Display -->
+        <div class="datetime-display">
+            <strong>Current Date & Time:</strong> <span id="current-datetime"></span>
+        </div>
+        
+        <!-- Barangay Display -->
+        <div class="barangay-display">
+            <div class="barangay-logo-display">
+                <img id="barangay-logo" src="img/Nagcarlan_Laguna_seal_logo.png" alt="Barangay Logo">
+            </div>
+            <div class="barangay-name-display" id="barangay-name-display">
+                Select a Barangay
+            </div>
+        </div>
+        
+        <!-- Certificate Request Form -->
+        <form id="cert-form">
+            <!-- Barangay Selection -->
+            <div class="form-group">
+                <label for="barangay">
+                    Barangay <span class="required">*</span>
+                </label>
+                <select id="barangay" class="form-control" required>
+                    <option value="">-- Loading Barangays... --</option>
+                </select>
+            </div>
+            
+            <!-- Resident Name with Autocomplete -->
+            <div class="form-group">
+                <label for="resident-name">
+                    Resident Name <span class="required">*</span>
+                </label>
+                <div class="autocomplete-wrapper">
+                    <input 
+                        type="text" 
+                        id="resident-name" 
+                        class="form-control" 
+                        placeholder="Start typing resident's name..."
+                        autocomplete="off"
+                        required
+                    >
+                    <div id="autocomplete-results" class="autocomplete-results"></div>
+                </div>
+                <div id="resident-details" class="resident-details"></div>
+            </div>
+            
+            <!-- Certificate Type -->
+            <div class="form-group">
+                <label for="cert-type">
+                    Certificate Type <span class="required">*</span>
+                </label>
+                <select id="cert-type" class="form-control" required>
+                    <option value="">-- Loading Certificate Types... --</option>
+                </select>
+            </div>
+            
+            <!-- Purpose -->
+            <div class="form-group">
+                <label for="purpose">
+                    Purpose <span class="required">*</span>
+                </label>
+                <textarea 
+                    id="purpose" 
+                    class="form-control" 
+                    placeholder="Enter the purpose of this certificate request..."
+                    required
+                ></textarea>
+                <div id="purpose-suggestions" class="purpose-suggestions"></div>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="submit-section">
+                <button type="submit" id="submit-btn" class="btn-submit">
+                    📄 Generate Certificate
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="cert-generator.js"></script>
+</body>
+</html>
