@@ -1,0 +1,78 @@
+/* CSS Variables for Modern Theming */
+:root {
+    --primary-bg: #fffacd; /* Light gray background */
+    --secondary-bg: #ffffff; /* White for cards */
+    --accent-color: #6c4c6c; /* Purple accent */
+    --hover-color: #c541df; /* Hover purple */
+    --text-color: #333; /* Dark text */
+    --border-color: #ddd; /* Light borders */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Grid Layout */
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main_section {
+    margin-left: 20rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Manage User Container (Card Style) */
+.settings_container {
+    display: flex;
+    width: 100%;
+    background: var(--secondary-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.settings_wrapper {
+    width: 100%;
+}
+
+.settings_title h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}

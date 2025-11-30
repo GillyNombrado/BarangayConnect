@@ -1,0 +1,157 @@
+/* CSS Variables for Modern Theming */
+:root {
+    --primary-bg: #fffacd; 
+    --secondary-bg: #ffffff; 
+    --accent-color: #6c4c6c;
+    --hover-color: #c541df;
+    --text-color: #333;
+    --border-color: #ddd;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack vertically: nav on top, content below */
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Top Navigation Bar */
+.nav_head {
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: rgb(129, 51, 136);
+    box-shadow: var(--shadow);
+    z-index: 1000; /* Ensures it stays above other content */
+    padding: 1rem 2rem; /* Adjust padding for horizontal layout */
+    height: auto; /* Let it size based on content */
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between; /* Branding on left, links on right */
+    align-items: center;
+    max-width: 1200px; /* Optional: Limit width on large screens */
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Branding */
+.branding {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.branding .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.branding_title h4, .branding_title h5 {
+    color: #ffffff;
+}
+
+.branding_title h4 {
+    font-size: 1.5rem;
+}
+
+.branding_title h5 {
+    font-size: 1rem;
+    opacity: 0.8;
+    padding-bottom: 8px;
+}
+
+/* Main Content */
+.main_content {
+    margin-top: 80px;
+    padding: 2rem;
+    flex: 1;
+    background-color: var(--secondary-bg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav_wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav_links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    .main_content {
+        margin-top: 120px;
+    }
+}
+
+
+.main_section {
+    margin-top: 7rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Dashboard Container */
+.dashboard_container {
+    display: flex;
+    width: 100%;
+    background: var(--secondary-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.dashboard_wrapper {
+    width: 100%;
+}
+
+.dashboard_title h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}

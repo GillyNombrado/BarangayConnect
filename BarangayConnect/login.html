@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="img/Nagcarlan_Laguna_seal_logo.png" type="image/x-icon">
+</head>
+<body> 
+    <!-- Header -->
+    <div class="container">
+        <div class="branding">
+            <div class="logo">
+                <img src="img/Nagcarlan_Laguna_seal_logo.png" alt="Logo" srcset="">
+            </div>
+            
+            <div class="branding_title">
+                <H1>BarangayConnect</H1>
+                <H2>Nagcarlan</H2>
+            </div>
+        </div>
+    <!-- Login body -->
+        <div class="login_body">
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required><br>
+
+                <input type="submit" value="Login">
+         
+                <div id="message"></div>
+                <p>No account yet? Register now <br>
+                    at your local barangay.</p>
+            </form>
+        </div>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>

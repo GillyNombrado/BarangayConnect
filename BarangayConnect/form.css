@@ -1,0 +1,143 @@
+:root {
+  --primary-bg: #fffacd;
+  --secondary-bg: #ffffff;
+  --accent-color: #6c4c6c;
+  --hover-color: #c541df;
+  --text-color: #333;
+  --border-color: #fceb37;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  margin: 0;
+  background: url(img/NagcarlanChurchScenerio.jpg); /* Kept as-is */
+  background-size: 100%;
+  color: var(--text-color);
+}
+
+/* Grid */
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 100vw;
+}
+
+form {
+  text-align: center;
+  padding: 5rem 20rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  background-color: var(--secondary-bg); /* Changed from #fcf17c to white */
+  border-radius: 20px;
+  box-shadow: var(--shadow); /* Added shadow for depth */
+}
+
+form h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color); /* Purple accent */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"] {
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  border-radius: 0.5rem;
+  margin: 0.4rem;
+  font-size: 1.2rem;
+  background-color: var(--primary-bg); /* Changed from beige to light gray */
+}
+
+#barangayID {
+  padding: 0.2rem;
+  padding-right: 8rem;
+  margin: 0.3rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg); /* Changed to light gray */
+}
+
+#gender,
+#civil_status {
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  margin: 0.3rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg); /* Changed to light gray */
+}
+
+form select {
+  padding: 0.2rem 0rem;
+  margin: 0.3rem 0rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg); /* Changed to light gray */
+}
+
+form input[type="date"] {
+  padding: 0.2rem 0.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg); /* Changed to light gray */
+}
+
+form button {
+  cursor: pointer;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--border-color); /* Updated border */
+  border-radius: 1rem;
+  background-color: var(--secondary-bg); /* Changed from white to white (consistent) */
+  color: var(--text-color); /* Added text color */
+}
+
+form button:hover {
+  background-color: var(--hover-color); /* Changed to purple hover */
+  color: white;
+  transition: 0.1s;
+}
+
+form .addbtn {
+  padding: 1.2rem 2.4rem;
+  background: linear-gradient(135deg, var(--accent-color), var(--hover-color)); /* Added gradient for modern look */
+  color: white;
+}
+
+form .upbtn {
+  background: linear-gradient(135deg, var(--accent-color), var(--hover-color)); /* Added gradient for modern look */
+  color: white;
+}
+
+form button a {
+  color: var(--text-color); /* Updated to variable */
+}
+
+ul {
+  padding-top: 1rem;
+  color: red;
+  list-style: none;
+  font-size: 1rem;
+}
