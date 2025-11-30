@@ -278,8 +278,8 @@ try {
                     <img src="<?php echo $logoPath; ?>" alt="Barangay Logo">
                 </div>
                 <div class="republic">Republic of the Philippines</div>
-                <div class="province">Province of Albay</div>
-                <div class="municipality">Municipality of Sto. Domingo</div>
+                <div class="province">Province of Laguna</div>
+                <div class="municipality">Municipality of Nagcarlan</div>
                 <div class="barangay-name">Barangay <?php echo $barangayName; ?></div>
             </div>
             
@@ -296,7 +296,7 @@ try {
                     This is to certify that 
                     <span class="name-field"><?php echo $fullName; ?></span>, 
                     <span class="age-field"><?php echo $age; ?></span> years old, 
-                    and a resident of <?php echo $address ? $address . ', ' : ''; ?>Barangay <?php echo $barangayName; ?>, Sto. Domingo, Albay is known to be of good moral character and law-abiding citizen in the community.
+                    and a resident of <?php echo $address ? $address . ', ' : ''; ?>Barangay <?php echo $barangayName; ?>, Nagcarlan, Laguna is known to be of good moral character and law-abiding citizen in the community.
                 </p>
             </div>
             
@@ -308,7 +308,7 @@ try {
             
             <div class="issued-section">
                 <p>
-                    <strong>ISSUED</strong> this <?php echo $formattedDate; ?> at Barangay <?php echo $barangayName; ?>, Sto. Domingo, Albay upon request of the interested party for <strong><?php echo strtolower($purpose); ?></strong>.
+                    <strong>ISSUED</strong> this <?php echo $formattedDate; ?> at Barangay <?php echo $barangayName; ?>, Nagcarlan, Laguna upon request of the interested party for <strong><?php echo strtolower($purpose); ?></strong>.
                 </p>
             </div>
             
